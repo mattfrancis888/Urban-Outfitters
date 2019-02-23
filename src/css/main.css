@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.App {
   font-size: 1.6rem;
   /*Make default font-size bigger. If default font-size is 16px; 1.6 rem = 16 px*/
   margin-top: 5rem;
@@ -161,10 +161,6 @@ footer .form-control {
     width: 25rem;
   }
 
-  body > .container-fluid {
-    padding: 4rem;
-  }
-
   footer .btn {
     width: 30%;
   }
@@ -220,7 +216,7 @@ footer .form-control {
     width: auto;
   }
 
-  body > .container-fluid {
+  body .container-fluid {
     padding: 4rem 6rem;
   }
 

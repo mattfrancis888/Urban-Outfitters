@@ -1,21 +1,15 @@
-$fallback_fonts: helvetica,arial,sans-serif;
-$padding_for_section_header_and_more_options: 1rem;
-
 :root {
   /*If default font-size is 16px; 1 rem = 10 px*/
   font-size: 62.5%;
   box-sizing: border-box;
 }
-//Body
 
 .App {
   font-size: 1.6rem;
   /*Make default font-size bigger. If default font-size is 16px; 1.6 rem = 16 px*/
   margin-top: 5rem;
-  font: 1.1rem/1 $fallback_fonts;
+  font: 1.1rem/1 helvetica, arial, sans-serif;
 }
-//Header
-//Nav
 
 .navbar-toggler {
   border: none;
@@ -31,12 +25,12 @@ $padding_for_section_header_and_more_options: 1rem;
 }
 
 #navbarSupportedContent {
-  font: 600 1.2rem $fallback_fonts;
+  font: 600 1.2rem helvetica, arial, sans-serif;
 }
 
 #nav_sign_in_font {
-  color: rgba(0,0,0,.5);
-  font: 600 1.2rem $fallback_fonts;
+  color: rgba(0, 0, 0, 0.5);
+  font: 600 1.2rem helvetica, arial, sans-serif;
 }
 
 .search_icon_img {
@@ -50,26 +44,20 @@ $padding_for_section_header_and_more_options: 1rem;
   height: 1.8rem;
 }
 
-nav {
-  .form-control {
-    //Setting width does not work with bootstrap 4 input forms; so use max-width
-    max-width: 9rem;
-    font: 1.1rem/1.36 $fallback_fonts;
-
-    &:focus {
-      box-shadow: none; //Remove blue glow
-    }
-  }
+nav .form-control {
+  max-width: 9rem;
+  font: 1.1rem/1.36 helvetica, arial, sans-serif;
 }
-//Main content/body
+nav .form-control:focus {
+  box-shadow: none;
+}
 
 .content_image {
   z-index: 0;
   max-width: 100%;
-
-  &:hover {
-    opacity: 0.8;
-  }
+}
+.content_image:hover {
+  opacity: 0.8;
 }
 
 .image_button {
@@ -84,40 +72,35 @@ nav {
   margin-right: auto;
   font-size: 1.4rem;
   font-weight: 400;
-  font: 1.1rem/1 $fallback_fonts;
+  font: 1.1rem/1 helvetica, arial, sans-serif;
   color: black;
   padding: 1rem;
-
-  &:hover {
-    background-color: white;
-    opacity: 1;
-  }
 }
-//Footer
+.image_button:hover {
+  background-color: white;
+  opacity: 1;
+}
 
 footer {
   background-color: #f5f5f5;
   margin-top: 8rem;
-
-  .btn {
-    background: #222;
-    color: white;
-    width: 100%;
-    padding: 1rem;
-    font-weight: 500;
-    font-size: 1.3rem;
-    font: 700 1.5rem/1.36 $fallback_fonts;
-
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-
-  .form-control {
-    padding: 2rem;
-    border: 0.1rem solid #aaa;
-    width: 100%;
-  }
+}
+footer .btn {
+  background: #222;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font: 700 1.5rem/1.36 helvetica, arial, sans-serif;
+}
+footer .btn:hover {
+  opacity: 0.9;
+}
+footer .form-control {
+  padding: 2rem;
+  border: 0.1rem solid #aaa;
+  width: 100%;
 }
 
 .footer_content {
@@ -131,21 +114,21 @@ footer {
 
 #email_sign_up_title {
   text-align: center;
-  font: lighter 1.8rem/1.15 $fallback_fonts;
+  font: lighter 1.8rem/1.15 helvetica, arial, sans-serif;
 }
 
 #email_sign_up_detail {
-  font: 1.1rem/1.36 $fallback_fonts;
+  font: 1.1rem/1.36 helvetica, arial, sans-serif;
 }
 
 #email_sign_up_agreement {
-  font: 0.9rem/1.36 $fallback_fonts;
+  font: 0.9rem/1.36 helvetica, arial, sans-serif;
   text-align: center;
   margin: 5rem 0;
 }
 
 .footer_section_header {
-  font: 700 1.5rem/1.36 $fallback_fonts;
+  font: 700 1.5rem/1.36 helvetica, arial, sans-serif;
   text-align: center;
   color: #222;
 }
@@ -163,31 +146,27 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-
-  li {
-    margin: 0.8rem;
-  }
+}
+#social_media_icon_contianer li {
+  margin: 0.8rem;
 }
 
 .footer_more_options {
   display: none;
 }
+
 /*Bootsrap 4 md breakpoint */
-@media screen and (min-width:768px) {
-  //Nav
+@media screen and (min-width: 768px) {
   #nav_logo {
     width: 25rem;
   }
-  // Footer
-  footer {
-    .btn {
-      width: 30%;
-    }
 
-    .form-group {
-      width: 60%;
-      margin-right: 1.5rem;
-    }
+  footer .btn {
+    width: 30%;
+  }
+  footer .form-group {
+    width: 60%;
+    margin-right: 1.5rem;
   }
 
   #email_sign_up_title {
@@ -218,17 +197,16 @@ footer {
     font-size: 400;
     font-size: 1.1rem;
     border-bottom: 0.1rem solid #ddd;
-    padding: $padding_for_section_header_and_more_options;
+    padding: 1rem;
   }
 
   .footer_more_options {
     display: block;
-    padding: $padding_for_section_header_and_more_options;
+    padding: 1rem;
   }
 }
 /*Bootsrap 4 lg breakpoint */
-@media screen and (min-width:992px) {
-  //Nav
+@media screen and (min-width: 992px) {
   #nav_logo {
     width: 15rem;
     height: 1.5rem;
@@ -237,24 +215,21 @@ footer {
   #nav_logo_container {
     width: auto;
   }
-  //Body
-  .App {
-    & > .container-fluid {
-      padding: 4rem 6rem;
-    }
+
+  .App > .container-fluid {
+    padding: 4rem 6rem;
   }
-  //Footer
+
   #social_media_icon_contianer {
     width: 100%;
-
-    li {
-      margin: 0;
-    }
+  }
+  #social_media_icon_contianer li {
+    margin: 0;
   }
 
-  footer {
-    & > .container-fluid {
-      padding: 0 11rem;
-    }
+  footer > .container-fluid {
+    padding: 0 11rem;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

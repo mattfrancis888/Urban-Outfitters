@@ -1,6 +1,6 @@
 import React from 'react';
-
-
+import uo_logo from '../img/uo_logo.gif';
+import uo_logo_smaller_screen from '../img/uo_logo_smaller_screen.gif';
 
 const Header = () => {
   return(
@@ -14,9 +14,9 @@ const Header = () => {
         <div id="nav_logo_container">
           <a href="#">
             <picture>
-              <source media="(min-width:768px)" srcset="img/uo_logo.gif" />
-              <source srcset="img/uo_logo_smaller_screen.gif" />
-              <img id="nav_logo" src="img/uo_logo.gif" alt="Urban Outfitters Logo" />
+              <source media="(min-width:768px)" srcset={uo_logo} />
+              <source srcset={uo_logo_smaller_screen} />
+              <img id="nav_logo" src={uo_logo} alt="Urban Outfitters Logo" />
             </picture>
           </a>
         </div>
@@ -64,8 +64,9 @@ const Header = () => {
           </ul>
         </div> {/*End of collapsable section in nav */}
       </nav> {/*End of Nav*/}
+      {/*End of header*/}
     </header>
   );
 }
 
-export default Header
+export default Header;
