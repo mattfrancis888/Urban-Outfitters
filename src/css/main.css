@@ -216,7 +216,7 @@ footer .form-control {
     width: auto;
   }
 
-  body .container-fluid {
+  .App > .container-fluid {
     padding: 4rem 6rem;
   }
 
