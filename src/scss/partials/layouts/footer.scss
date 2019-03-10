@@ -1,0 +1,148 @@
+
+footer {
+  background-color: #f5f5f5;
+  margin-top: 8rem;
+  .btn {
+    background: #222;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font: 700 1.5rem/1.36 $fallback_fonts;
+
+    &:hover {
+      opacity: 0.9;
+    }
+    @media screen and (min-width:$bootstrap_md_breakpoint) {
+      width: 30%;
+    }
+  }
+
+  .form-control {
+    padding: 2rem;
+    border: 0.1rem solid #aaa;
+    width: 100%;
+  }
+}
+
+.footer_content {
+  padding: 3rem 2rem 1.5rem;
+  border-bottom: 0.2rem solid white;
+}
+
+#email_header_content {
+  margin-bottom: 3rem;
+}
+
+#email_sign_up_title {
+  text-align: center;
+  font: lighter 1.8rem/1.15 $fallback_fonts;
+}
+
+#email_sign_up_detail {
+  font: 1.1rem/1.36 $fallback_fonts;
+}
+
+#email_sign_up_agreement {
+  font: 0.9rem/1.36 $fallback_fonts;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.footer_section_header {
+  font: 700 1.5rem/1.36 $fallback_fonts;
+  text-align: center;
+  color: #222;
+}
+
+.social_icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+#social_media_icon_contianer {
+  width: 18rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+
+  li {
+    margin: 0.8rem;
+  }
+}
+
+.footer_more_options {
+  display: none;
+}
+/*Bootsrap 4 md breakpoint */
+@media screen and (min-width:$bootstrap_md_breakpoint) {
+  //Nav
+  // #nav_logo {
+  //   width: 25rem;
+  // }
+  // Footer
+  footer {
+    .btn {
+      width: 30%;
+    }
+
+    .form-group {
+      width: 60%;
+      margin-right: 1.5rem;
+    }
+  }
+
+  #email_sign_up_title {
+    text-align: left;
+  }
+
+  #email_sign_up_agreement {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  #social_media_icon_contianer {
+    width: 35%;
+    margin: 0;
+    @media screen and (min-width:$bootstrap_lg_breakpoint){
+      width: 100%;
+      li {
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width:$bootstrap_lg_breakpoint) {
+    footer {
+      & > .container-fluid {
+        padding: 0 11rem;
+      }
+    }
+  }
+
+  .footer_content {
+    border: none;
+  }
+
+  .social_icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .footer_section_header {
+    text-align: left;
+    font-size: 400;
+    font-size: 1.1rem;
+    border-bottom: 0.1rem solid #ddd;
+    padding: $padding_for_section_header_and_more_options;
+  }
+
+  .footer_more_options {
+    display: block;
+    padding: $padding_for_section_header_and_more_options;
+  }
+}
