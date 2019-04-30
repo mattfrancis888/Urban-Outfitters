@@ -325,7 +325,7 @@ html {
 body {
   font-size: 1.6rem;
   /*Make default font-size bigger. If default font-size is 16px; 1.6 rem = 16 px*/
-  font: 1.1rem/1 helvetica, arial, sans-serif;
+  font: 1.1rem helvetica, arial, sans-serif;
 }
 
 .navbar-toggler {
@@ -524,12 +524,12 @@ footer .form-control {
   }
 }
 
-/*Bootsrap 4 md breakpoint */
 @media screen and (min-width: 992px) {
   footer > .container-fluid {
     padding: 0 11rem;
   }
 }
+
 .content_image {
   z-index: 0;
   max-width: 100%;
