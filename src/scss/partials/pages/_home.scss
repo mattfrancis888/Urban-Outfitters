@@ -1,7 +1,5 @@
 .content_image {
-  z-index: 0;
-  max-width: 100%;
-
+  @include overlayable-image-fills-container;
   &:hover {
     opacity: 0.8;
   }

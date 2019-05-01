@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
-import Header from './components/Header.js'
-import Body from './components/Body.js'
-import Footer from './components/Footer.js'
-import Testme from './components/Testme.js'
+import {BrowserRouter,Route} from 'react-router-dom';
+import Header from './components/Header.js';
+import Body from './components/Body.js';
+import Footer from './components/Footer.js';
+import Testme from './components/Testme.js';
+import Featured from './components/Featured.js';
+import Items_Available from './components/Items_Available.js';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header/>
-        <Body/>
-        <Footer/>
-      </div>
-    );
-  }
-}
+
+    class App extends Component {
+      render() {
+        return (
+          <BrowserRouter>
+            <div className="App">
+              <Header/>
+              <Items_Available/>
+              {/* <Route exact path="/" render = {() => <Body children={Featured}/> } /> */}
+              <Footer/>
+            </div>
+          </BrowserRouter>
+        );
+      }
+    }
 
 export default App;
