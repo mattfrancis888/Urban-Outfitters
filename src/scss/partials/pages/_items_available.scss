@@ -1,0 +1,44 @@
+div > h3{
+  font:700 1.6rem/1.36 $fallback_fonts;
+  color: black;
+}
+.item-image{
+  @include overlayable-image-fills-container();
+}
+
+.filter-dropdown{
+  width: 100%;
+  border: 1px solid $light-grey;
+  font:1.4rem/1.3 $fallback_fonts;
+}
+
+.btn-secondary:hover{
+  //Class created by reactstrap's elements
+  border-color: $light-grey !important;
+}
+
+.dropdown-toggle:focus{
+  box-shadow: none !important;
+}
+
+.item-title{
+  font: 1.1rem/1.36 $fallback_fonts;
+}
+
+.item-price{
+  font: 1.1rem/1.6 $fallback_fonts;
+  letter-spacing: .04rem;
+}
+
+#item-category-filter{
+  width: 70%;
+}
+
+#item-attribute-filter{
+  width: 26%;
+}
+
+#result-count{
+  font: 1.1rem/1.36 $fallback_fonts;
+  color: $dark-grey;
+}

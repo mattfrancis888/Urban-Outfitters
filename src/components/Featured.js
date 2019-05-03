@@ -18,7 +18,7 @@ import most_liked_smaller_screen from '../img/most_liked_smaller_screen.jpg';
 
 const Featured = () => {
   return(
-    <div>
+    <div className="container-fluid">
       <div className="row mb-5">
         <div className="col">
           <picture>
