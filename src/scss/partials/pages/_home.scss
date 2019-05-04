@@ -27,35 +27,10 @@
   }
 }
 
-/*Bootsrap 4 lg breakpoint */
-@media screen and (min-width:$bootstrap_lg_breakpoint) {
-  //Nav
-  // #nav_logo {
-  //   width: 15rem;
-  //   height: 1.5rem;
-  // }
-
-  // #nav_logo_container {
-  //   width: auto;
-  // }
-  //Body
-  .App {
-    & > .container-fluid {
+.App {
+  & > .container-fluid {
+    @media screen and (min-width:$bootstrap_lg_breakpoint) {
       padding: 4rem 6rem;
     }
   }
-  //Footer
-  // #social_media_icon_contianer {
-  //   width: 100%;
-  //
-  //   li {
-  //     margin: 0;
-  //   }
-  // }
-
-  // footer {
-  //   & > .container-fluid {
-  //     padding: 0 11rem;
-  //   }
-  // }
 }

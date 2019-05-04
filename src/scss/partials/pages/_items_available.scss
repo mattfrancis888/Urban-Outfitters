@@ -34,11 +34,50 @@ div > h3{
   width: 70%;
 }
 
-#item-attribute-filter{
+.item-attribute-filter{
   width: 26%;
+  @media screen and (min-width:$bootstrap_md_breakpoint) {
+    width:50%;
+  }
 }
 
 #result-count{
   font: 1.1rem/1.36 $fallback_fonts;
   color: $dark-grey;
+}
+
+.item-available-image-container{
+  &:hover{
+    .quick-shop-button{
+      border: 1px solid white;;
+      background-color: white;
+      opacity: 0.93;
+    }
+  }
+}
+
+.quick-shop-button{
+  position:absolute;
+  bottom :0;
+  right: 0;
+  z-index: 1;
+  font: 1.1rem/1 $fallback_fonts;
+  text-align:center;
+  width:100%;
+  padding:2rem;
+  opacity:0;
+  @media screen and (min-width:$bootstrap_md_breakpoint) {
+    opacity: 1;
+  }
+}
+
+#browse-by-header{
+  font:1.1rem/1.36 helvetica,arial,sans-serif;
+  letter-spacing: .04rem;
+  color: $dark-grey;
+  border-bottom:1px solid #aaa;
+}
+
+#all-new-header{
+  font: 700 1.1rem/1.36 helvetica,arial,sans-serif
 }

@@ -563,12 +563,12 @@ footer .form-control {
   opacity: 1;
 }
 
-/*Bootsrap 4 lg breakpoint */
 @media screen and (min-width: 992px) {
   .App > .container-fluid {
     padding: 4rem 6rem;
   }
 }
+
 div > h3 {
   font: 700 1.6rem/1.36 helvetica, arial, sans-serif;
   color: black;
@@ -606,13 +606,52 @@ div > h3 {
   width: 70%;
 }
 
-#item-attribute-filter {
+.item-attribute-filter {
   width: 26%;
+}
+@media screen and (min-width: 768px) {
+  .item-attribute-filter {
+    width: 50%;
+  }
 }
 
 #result-count {
   font: 1.1rem/1.36 helvetica, arial, sans-serif;
   color: #767676;
+}
+
+.item-available-image-container:hover .quick-shop-button {
+  border: 1px solid white;
+  background-color: white;
+  opacity: 0.93;
+}
+
+.quick-shop-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  font: 1.1rem/1 helvetica, arial, sans-serif;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .quick-shop-button {
+    opacity: 1;
+  }
+}
+
+#browse-by-header {
+  font: 1.1rem/1.36 helvetica, arial, sans-serif;
+  letter-spacing: 0.04rem;
+  color: #767676;
+  border-bottom: 1px solid #aaa;
+}
+
+#all-new-header {
+  font: 700 1.1rem/1.36 helvetica, arial, sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
