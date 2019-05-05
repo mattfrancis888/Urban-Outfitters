@@ -14,8 +14,8 @@ import Items_Available from './components/Items_Available.js';
           <BrowserRouter>
             <div className="App">
               <Header/>
-              <Items_Available/>
-              {/* <Route exact path="/" render = {() => <Body children={Featured}/> } /> */}
+              <Route exact path="/" render = {() => <Featured/> } />
+              <Route path="/items-available" render = {() => <Items_Available/> } />
               <Footer/>
             </div>
           </BrowserRouter>

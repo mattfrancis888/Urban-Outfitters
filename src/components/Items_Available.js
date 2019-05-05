@@ -43,8 +43,8 @@ const Items_Available = () =>{
 
       <div className="row">
 
-        {/*Start Sidebar */}
-        <div className="d-none d-md-block col-md-3">
+        {/*Beginning Sidebar */}
+        <div className="d-none d-md-block col-md-3 col-xl-2">
           <h3 id="browse-by-header" className="pb-3"> Browse by </h3>
           <h3 id="all-new-header" className="py-3"> All New </h3>
 
@@ -59,7 +59,7 @@ const Items_Available = () =>{
           </ul>
         </div>
         {/*End of Sidebar */}
-        <div className="col-md-9">
+        <div className="col-md-9 col-xl-10">
           <div className="row">
           {/*FUTURE REMINDER: DOC SAID NOT TO USE A ROW INSIDE ROW! No need to */}
           {/*Will appear on MD breakpoint*/}
@@ -85,7 +85,7 @@ const Items_Available = () =>{
                 </UncontrolledDropdown>
               </div>
             </div> {/*End of Will appear on MD breakpoint*/}
-            <div className="col-6 col-sm-6 col-md-4 col-lg-3 mb-5">
+            <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5">
               <div className="position-relative item-available-image-container">
                 <img className="item-image mb-3" src={item_1}/>
                 <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
@@ -93,7 +93,7 @@ const Items_Available = () =>{
               <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
               <span> $82.00 CAD </span>
             </div>
-            <div className="col-6 col-md-4 col-lg-3">
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
               <div className="position-relative item-available-image-container">
                 <img className="item-image mb-3" src={item_2}/>
                 <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
@@ -101,7 +101,7 @@ const Items_Available = () =>{
               <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
               <span> $82.00 CAD </span>
             </div>
-            <div className="col-6 col-md-4 col-lg-3">
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
               <div className="position-relative item-available-image-container">
                 <img className="item-image" src={item_3}/>
                 <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
@@ -109,7 +109,7 @@ const Items_Available = () =>{
               <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
               <span> $82.00 CAD </span>
             </div>
-            <div className="col-6 col-md-4 col-lg-3">
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
               <div className="position-relative item-available-image-container">
                 <img className="item-image" src={item_4}/>
                 <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>

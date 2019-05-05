@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import uo_logo from '../img/uo_logo.gif';
 import uo_logo_smaller_screen from '../img/uo_logo_smaller_screen.gif';
 
@@ -12,13 +13,13 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div id="nav_logo_container">
-          <a href="#">
+          <Link to="/">
             <picture>
               <source media="(min-width:768px)" srcset={uo_logo} />
               <source srcset={uo_logo_smaller_screen} />
               <img id="nav_logo" src={uo_logo} alt="Urban Outfitters Logo" />
             </picture>
-          </a>
+          </Link>
         </div>
 
         {/* NOTE: Repeating SVG tags; bad practice?*/}
@@ -47,19 +48,19 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent"> {/*Start of collapsable section in nav*/}
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">Women's <span className="sr-only">(current)</span></a>
+              <Link to="/items-available" className="nav-link" href="#">Women's <span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Men's<span className="sr-only">(current)</span></a>
+              <Link to="/items-available" className="nav-link">Men's<span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Home<span className="sr-only">(current)</span></a>
+              <Link to="/items-available" className="nav-link">Home<span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Lifestyle<span className="sr-only">(current)</span></a>
+              <Link to="/items-available" className="nav-link">Lifestyle<span className="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Beauty<span className="sr-only">(current)</span></a>
+              <Link to="/items-available" className="nav-link">Beauty<span className="sr-only">(current)</span></Link>
             </li>
           </ul>
         </div> {/*End of collapsable section in nav */}
