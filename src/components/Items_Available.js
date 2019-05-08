@@ -9,7 +9,7 @@ import item_3_alt from '../img/item_3_alt.jpg';
 import item_4 from '../img/item_4.jpg';
 import item_4_alt from '../img/item_4_alt.jpg';
 
-const Items_Available = () =>{
+const Items_Available = (props) =>{
   return (
     <div className="container-fluid">
       <div className="row text-center">
@@ -86,36 +86,16 @@ const Items_Available = () =>{
               </div>
             </div> {/*End of Will appear on MD breakpoint*/}
             <div className="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5">
-              <div className="position-relative item-available-image-container">
-                <img className="item-image mb-3" src={item_1}/>
-                <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
-              </div>
-              <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
-              <span> $82.00 CAD </span>
+              {props.item_info}
             </div>
-            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
-              <div className="position-relative item-available-image-container">
-                <img className="item-image mb-3" src={item_2}/>
-                <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
-              </div>
-              <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
-              <span> $82.00 CAD </span>
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3 mb-5">
+              {props.item_info}
             </div>
-            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
-              <div className="position-relative item-available-image-container">
-                <img className="item-image" src={item_3}/>
-                <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
-              </div>
-              <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
-              <span> $82.00 CAD </span>
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3 mb-5" >
+              {props.item_info}
             </div>
-            <div className="col-6 col-md-4 col-lg-4 col-xl-3">
-              <div className="position-relative item-available-image-container">
-                <img className="item-image" src={item_4}/>
-                <button type="button" className="btn btn-light quick-shop-button">QUICK SHOP</button>
-              </div>
-              <h3 className="item-title">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
-              <span> $82.00 CAD </span>
+            <div className="col-6 col-md-4 col-lg-4 col-xl-3 mb-5">
+              {props.item_info}
             </div>
           </div>
         </div>

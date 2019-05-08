@@ -411,6 +411,7 @@ footer .btn {
   font: 700 1.5rem/1.36 helvetica, arial, sans-serif;
 }
 footer .btn:hover {
+  color: white;
   opacity: 0.9;
 }
 @media screen and (min-width: 768px) {
@@ -660,6 +661,28 @@ div > h3 {
 
 #all-new-header {
   font: 700 1.1rem/1.36 helvetica, arial, sans-serif;
+}
+
+.buy-item-container {
+  padding: 4rem;
+}
+
+.buy-item-title-and-price {
+  font: lighter 1.8rem/1.15 helvetica, arial, sans-serif;
+}
+
+.size-text {
+  font: 1.1rem/1.36 helvetica, arial, sans-serif;
+  text-decoration: underline;
+}
+
+#add-to-bag-button {
+  font: 700 2rem/1.36 helvetica, arial, sans-serif;
+  background-color: #222;
+  border: 1px solid #222;
+}
+#add-to-bag-button:hover {
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=main.css.map */
