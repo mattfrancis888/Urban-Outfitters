@@ -1,20 +1,48 @@
 .buy-item-container{
   padding:4rem;
 }
+
 .buy-item-title-and-price{
   font: lighter 1.8rem/1.15 $fallback-fonts;
+  @media screen and (min-width:$bootstrap_md_breakpoint) {
+    font-size: 2.2rem;
+  }
+}
+
+#carousel-form-for-xs-item-pic{
+  //* xs = Extra small screen, less than sm breakpoint*/
+  position: absolute;
+  top: 1rem;
+  right:1rem;
+}
+
+.carousel-button{
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .size-text{
   font: 1.1rem/1.36 $fallback-fonts;
   text-decoration: underline;
 }
-#add-to-bag-button{
+
+.size-box{
+  &:hover{
+    border: 1px solid $dark-grey !important;
+  }
+}
+
+.add-to-bag-button{
   font:700 2rem/1.36 $fallback-fonts;
   background-color: $light-black;
   border:1px solid $light-black;
 
   &:hover{
     opacity: 0.9;
+    background-color: $light-black;
+    border: 1px solid $light-black;
   }
 }

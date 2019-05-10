@@ -1,101 +1,93 @@
-import React from 'react';
+import React, { Component } from 'react';
 import item_1 from '../img/item_1.jpg';
 import item_1_alt from '../img/item_1_alt.jpg';
+import item_1_alt2 from '../img/item_1_alt2.jpg';
+import item_1_alt3 from '../img/item_1_alt3.jpg';
+import item_1_alt4 from '../img/item_1_alt4.jpg';
+import item_1_alt5 from '../img/item_1_alt5.jpg';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-const Buy_Item = (props) => {
+
+class Buy_Item extends React.Component {
+
+  state = {
+    divColors: ['default','default','default','default','default','default'],
+  }
+
+  render(){
+
+    const handleDivClick = index => {
+      const divColors = ['default','default','default','default','default','default'];
+      divColors[index] = 'red';
+      this.setState({
+        divColors: divColors
+      });
+    }
+
   return(
     <div className="container-fluid">
+
       <div className="row">
-        <div className="col col-md-6">
-
-          <div className="position-relative item-available-image-container">
-            <img className="item-image mb-3" src={item_1}/>
-          </div>
-          <h3 className="buy-item-title-and-price">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
+        <div className="col-12 mb-3">
+          <h3 className="buy-item-title-and-price mt-3">Champion Chenille Embroidered Logo Hoodie Sweatshirt</h3>
           <span className="buy-item-title-and-price"> $82.00 CAD </span>
+        </div>
+        <div className="col col-sm-6">
+          <div className="position-relative item-available-image-container">
+            <img className="item-image mb-3 w-100" src={item_1}/>
 
-          <div className="d-block mt-3">
-            <input type="radio" id="star10" name="rating" value="5" className="" /><label for="star5" title="5 starS">5 stars</label>
-            <input type="radio" id="star9" name="rating" value="4" className="" /><label for="star4" title="4 stars">4 stars</label>
-            <input type="radio" id="star10" name="rating" value="3" className="" /><label for="star3" title="3 starS">3 stars</label>
-            <input type="radio" id="star9" name="rating" value="2" className="" /><label for="star2" title="2 stars">2 stars</label>
-            <input type="radio" id="star9" name="rating" value="1" className="" /><label for="star1" title="1 star">1 star</label>
+            <div className="d-block d-sm-none mt-3" id="carousel-form-for-xs-item-pic">
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[0]}}
+                onClick={() => handleDivClick(0)}
+              />
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[1]}}
+                onClick={() => handleDivClick(1)}
+              />
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[2]}}
+                onClick={() => handleDivClick(2)}
+              />
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[3]}}
+                onClick={() => handleDivClick(3)}
+              />
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[4]}}
+                onClick={() => handleDivClick(4)}
+              />
+              <span className="carousel-button mx-1"
+                style={{backgroundColor: this.state.divColors[5]}}
+                onClick={() => handleDivClick(5)}
+              />
+            </div>
+
+            <div className="d-none d-sm-block row mt-5">
+              <div className="col px-5">
+                <img className="col-3" src={item_1_alt2}/>
+                <img className="col-3" src={item_1_alt3}/>
+                <img className="col-3" src={item_1_alt4}/>
+                <img className="col-3" src={item_1_alt5}/>
+               </div>
+            </div>
+
           </div>
 
-          <h1 className="d-block"> Size: </h1>
-          <div className="d-inline-block border p-4 mx-1">S</div>
-          <div className="d-inline-block border p-4 mx-1">M</div>
-          <div className="d-inline-block border p-4 mx-1">L</div>
-          <div className="d-inline-block border p-4 mx-1">XL</div>
-          <div className="d-inline-block border p-4 mx-1">XXL</div>
-
-          <div className="d-block mt-4 mb-4">
-            <h4 className="size-text d-inline-block"> Size Guides </h4>
-            <h4 className="size-text d-inline-block mr-3 ml-3"> | </h4>
-            <h4 className="size-text d-inline-block"> Customers Say: True to Size </h4>
+  {/*Info on the bottom  of the pic in very small screen mode will dissapear on SM breakpoint */}
+          <div className="d-sm-none">
+            {this.props.buy_item_info}
           </div>
-
-          <h4 className="d-block">Qty:</h4>
-
-            <UncontrolledDropdown className="w-25 mb-5">
-              <DropdownToggle caret className="filter-dropdown d-flex justify-content-between align-items-center bg-white text-dark py-3">
-                1
-              </DropdownToggle>
-              <DropdownMenu className="w-100">
-                <DropdownItem>2</DropdownItem>
-                <DropdownItem>3</DropdownItem>
-                <DropdownItem>4</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-
-            <div className="radio">
-              <label ><input type="radio" name="optradio" value="ship-to-me" className="mr-3" checked/>Ship to me</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="optradio" value="store-pick-up"className="mr-3"/>In-Store Pickup</label>
-            </div>
-          <button type="button" className="btn btn-primary btn-lg btn-block p-3 mt-5" id="add-to-bag-button" >Add to Bag</button>
         </div>
 
-        <div className="col-md-6">
-          <h1 className="d-block"> Size: </h1>
-          <div className="d-inline-block border p-4 mx-1">S</div>
-          <div className="d-inline-block border p-4 mx-1">M</div>
-          <div className="d-inline-block border p-4 mx-1">L</div>
-          <div className="d-inline-block border p-4 mx-1">XL</div>
-          <div className="d-inline-block border p-4 mx-1">XXL</div>
+  {/*Info on the right of the pic that will appear on SM breakpoint */}
+        <div className="d-none d-sm-block col-sm-6">
+          {this.props.buy_item_info}
+        </div>
 
-          <div className="d-block mt-4 mb-4">
-            <h4 className="size-text d-inline-block"> Size Guides </h4>
-            <h4 className="size-text d-inline-block mr-3 ml-3"> | </h4>
-            <h4 className="size-text d-inline-block"> Customers Say: True to Size </h4>
-          </div>
-
-          <h4 className="d-block">Qty:</h4>
-
-            <UncontrolledDropdown className="w-25 mb-5">
-              <DropdownToggle caret className="filter-dropdown d-flex justify-content-between align-items-center bg-white text-dark py-3">
-                1
-              </DropdownToggle>
-              <DropdownMenu className="w-100">
-                <DropdownItem>2</DropdownItem>
-                <DropdownItem>3</DropdownItem>
-                <DropdownItem>4</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-
-            <div className="radio">
-              <label ><input type="radio" name="optradio" value="ship-to-me" className="mr-3" checked/>Ship to me</label>
-            </div>
-            <div className="radio">
-              <label><input type="radio" name="optradio" value="store-pick-up"className="mr-3"/>In-Store Pickup</label>
-            </div>
-            <button type="button" className="btn btn-primary btn-lg btn-block p-3 mt-5" id="add-to-bag-button" >Add to Bag</button>
-          </div>
-
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Buy_Item;
