@@ -47,10 +47,18 @@
   }
 }
 
-.activeRadio{
+.active-radio{
   background-color: $dark-grey;
 }
 
-.inactiveRadio{
+.inactive-radio{
   background-color: white;
+}
+
+.active-side-image{
+  border:1px solid $dark-grey;
+}
+
+.inactive-side-image{
+  border: none;
 }

@@ -49,26 +49,33 @@ class Buy_Item extends React.Component {
         {/*beginning of container that's on the left in SM+ screen */}
         <div className="col col-sm-6 col-lg-5 mr-lg-5">
           <div className="row">
+            {/*Images that will appear on the side of the 'main image at LG screen' */}
             <div className="d-none d-lg-block col-lg-2 px-4">
             {/*manipulate px above to adjust to the images height and width in the image  carousel at large screeens, you can do the
               same for medium screens too!*/}
-              <img className="mw-100 my-2" src={item_1}/>
-              <img className="mw-100 my-2" src={item_1_alt}/>
-              <img className="mw-100 my-2" src={item_1_alt2}/>
-              <img className="mw-100 my-2" src={item_1_alt3}/>
-              <img className="mw-100 my-2" src={item_1_alt4}/>
-              <img className="mw-100 my-2" src={item_1_alt5}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 0 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(0)} src={item_1}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 1 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(1)} src={item_1_alt}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 2 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(2)} src={item_1_alt2}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 3 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(3)} src={item_1_alt3}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 4 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(4)} src={item_1_alt4}/>
+              <img className={`mw-100 my-2 ${this.state.radioStatus === 5 ? "active-side-image" : "inactive-side-image"}`}
+                    onClick={() => handleRadioClick(5)} src={item_1_alt5}/>
             </div>
 
             <div className="position-relative col-12 col-lg-10">
               <img className="item-image mb-3 w-100" src= {this.state.currentImg} />
 
               <div className="d-block d-sm-none mt-3" id="carousel-form-for-xs-item-pic">
-                <span className={`carousel-button mx-1 ${this.state.radioStatus === 0 ? "activeRadio" : "inactiveRadio"}`}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 0 ? "active-radio" : "inactive-radio"}`}
                   ref={this.simulateClick}
                   onClick={() => handleRadioClick(0)}
                 />
-                <span className={`carousel-button mx-1 ${this.state.radioStatus === 1 ? "activeRadio" : "inactiveRadio"}`}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 1 ? "active-radio" : "inactive-radio"}`}
                   onClick={() => handleRadioClick(1)}
                 />
                 <span className={`carousel-button mx-1 ${this.state.radioStatus === 2 ? "activeRadio" : "inactiveRadio"}`}
@@ -85,7 +92,7 @@ class Buy_Item extends React.Component {
                 />
               </div>
             </div>
-
+            {/*Images that will appear on the bottom of the 'main image at SM screen' */}
             <div className="d-none d-sm-block d-lg-none row mt-5 px-5">
               <img className="col-3" src={item_1_alt2}/>
               <img className="col-3" src={item_1_alt3}/>

@@ -710,12 +710,20 @@ div > h3 {
   border: 1px solid #222;
 }
 
-.activeRadio {
+.active-radio {
   background-color: #767676;
 }
 
-.inactiveRadio {
+.inactive-radio {
   background-color: white;
+}
+
+.active-side-image {
+  border: 1px solid #767676;
+}
+
+.inactive-side-image {
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */
