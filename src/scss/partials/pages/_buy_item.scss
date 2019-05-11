@@ -46,3 +46,11 @@
     border: 1px solid $light-black;
   }
 }
+
+.activeRadio{
+  background-color: $dark-grey;
+}
+
+.inactiveRadio{
+  background-color: white;
+}

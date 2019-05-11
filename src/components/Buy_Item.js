@@ -7,19 +7,33 @@ import item_1_alt4 from '../img/item_1_alt4.jpg';
 import item_1_alt5 from '../img/item_1_alt5.jpg';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
+const originalColor = "white"
+const clickedColor = "grey"
 class Buy_Item extends React.Component {
 
   state = {
-    divColors: ['default','default','default','default','default','default'],
+    radioStatus: originalColor,
+    currentImg: item_1
+  }
+
+  simulateClick(e) {
+    e.click()
   }
 
   render(){
+    const imgDic = {
+      0: item_1,
+      1: item_1_alt,
+      2: item_1_alt2,
+      3: item_1_alt3,
+      4: item_1_alt4,
+      5: item_1_alt5
+    }
 
-    const handleDivClick = index => {
-      const divColors = ['default','default','default','default','default','default'];
-      divColors[index] = 'red';
+    const handleRadioClick = radioId => {
       this.setState({
-        divColors: divColors
+        radioStatus: radioId,
+        currentImg: imgDic[radioId]
       });
     }
 
@@ -47,32 +61,27 @@ class Buy_Item extends React.Component {
             </div>
 
             <div className="position-relative col-12 col-lg-10">
-              <img className="item-image mb-3 w-100" src={item_1}/>
+              <img className="item-image mb-3 w-100" src= {this.state.currentImg} />
 
               <div className="d-block d-sm-none mt-3" id="carousel-form-for-xs-item-pic">
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[0]}}
-                  onClick={() => handleDivClick(0)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 0 ? "activeRadio" : "inactiveRadio"}`}
+                  ref={this.simulateClick}
+                  onClick={() => handleRadioClick(0)}
                 />
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[1]}}
-                  onClick={() => handleDivClick(1)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 1 ? "activeRadio" : "inactiveRadio"}`}
+                  onClick={() => handleRadioClick(1)}
                 />
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[2]}}
-                  onClick={() => handleDivClick(2)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 2 ? "activeRadio" : "inactiveRadio"}`}
+                  onClick={() => handleRadioClick(2)}
                 />
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[3]}}
-                  onClick={() => handleDivClick(3)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 3 ? "activeRadio" : "inactiveRadio"}`}
+                  onClick={() => handleRadioClick(3)}
                 />
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[4]}}
-                  onClick={() => handleDivClick(4)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 4 ? "activeRadio" : "inactiveRadio"}`}
+                  onClick={() => handleRadioClick(4)}
                 />
-                <span className="carousel-button mx-1"
-                  style={{backgroundColor: this.state.divColors[5]}}
-                  onClick={() => handleDivClick(5)}
+                <span className={`carousel-button mx-1 ${this.state.radioStatus === 5 ? "activeRadio" : "inactiveRadio"}`}
+                  onClick={() => handleRadioClick(5)}
                 />
               </div>
             </div>
