@@ -5,14 +5,13 @@ import item_1_alt2 from '../img/item_1_alt2.jpg';
 import item_1_alt3 from '../img/item_1_alt3.jpg';
 import item_1_alt4 from '../img/item_1_alt4.jpg';
 import item_1_alt5 from '../img/item_1_alt5.jpg';
-import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { UncontrolledCarousel } from 'reactstrap';
 
-const originalColor = "white"
-const clickedColor = "grey"
+
 class Buy_Item extends React.Component {
 
   state = {
-    radioStatus: originalColor,
+    radioStatus: null,
     currentImg: item_1
   }
 
@@ -69,7 +68,7 @@ class Buy_Item extends React.Component {
 
             <div className="position-relative col-12 col-lg-10">
               <img className="item-image mb-3 w-100" src= {this.state.currentImg} />
-
+              {/*Radio buttons for pictures in xs screen */}
               <div className="d-block d-sm-none mt-3" id="carousel-form-for-xs-item-pic">
                 <span className={`carousel-button mx-1 ${this.state.radioStatus === 0 ? "active-radio" : "inactive-radio"}`}
                   ref={this.simulateClick}
@@ -92,12 +91,27 @@ class Buy_Item extends React.Component {
                 />
               </div>
             </div>
+
             {/*Images that will appear on the bottom of the 'main image at SM screen' */}
             <div className="d-none d-sm-block d-lg-none row mt-5 px-5">
-              <img className="col-3" src={item_1_alt2}/>
-              <img className="col-3" src={item_1_alt3}/>
-              <img className="col-3" src={item_1_alt4}/>
-              <img className="col-3" src={item_1_alt5}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 0 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(0)}
+                    src={item_1}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 1 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(1)}
+                    src={item_1_alt}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 2 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(2)}
+                    src={item_1_alt2}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 3 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(3)}
+                    src={item_1_alt3}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 4 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(4)}
+                    src={item_1_alt4}/>
+              <img className={`col-3 my-1  ${this.state.radioStatus === 5 ? "active-side-image" : "inactive-side-image"} `}
+                    onClick={() => handleRadioClick(5)}
+                    src={item_1_alt5}/>
             </div>
           </div>        {/*end of container that's on the left in sm+ screen */}
 

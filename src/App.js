@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {BrowserRouter,Route} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import Header from './components/Header.js';
 import Body from './components/Body.js';
 import Footer from './components/Footer.js';
@@ -10,7 +13,7 @@ import Items_Available from './components/Items_Available.js';
 import Buy_Item from './components/Buy_Item.js';
 import Buy_Item_Info from './components/Buy_Item_Info.js';
 
-
+library.add(faStar);
 class App extends Component {
   render() {
     return (

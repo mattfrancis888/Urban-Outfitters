@@ -1,15 +1,17 @@
 import React from 'react';
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Buy_Item_Info = () => {
   return(
     <>
       <div className="d-block mt-3">
-        <input type="radio" id="star10" name="rating" value="5" className="" /><label for="star5" title="5 starS">5 stars</label>
-        <input type="radio" id="star9" name="rating" value="4" className="" /><label for="star4" title="4 stars">4 stars</label>
-        <input type="radio" id="star10" name="rating" value="3" className="" /><label for="star3" title="3 starS">3 stars</label>
-        <input type="radio" id="star9" name="rating" value="2" className="" /><label for="star2" title="2 stars">2 stars</label>
-        <input type="radio" id="star9" name="rating" value="1" className="" /><label for="star1" title="1 star">1 star</label>
+        <FontAwesomeIcon icon="star" className="fa-lg"/>
+        <FontAwesomeIcon icon="star" className="fa-lg"/>
+        <FontAwesomeIcon icon="star" className="fa-lg"/>
+        <FontAwesomeIcon icon="star" className="fa-lg"/>
+        <FontAwesomeIcon icon="star" className="fa-lg"/>
+        <span className="align-middle"> 5.0 </span>
       </div>
 
       <h1 className="d-block"> Size: </h1>
