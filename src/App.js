@@ -12,6 +12,7 @@ import Item_Info from './components/Item_Info.js';
 import Items_Available from './components/Items_Available.js';
 import Buy_Item from './components/Buy_Item.js';
 import Buy_Item_Info from './components/Buy_Item_Info.js';
+import Sign_In_Box from './components/Sign_In_Box.js';
 
 library.add(faStar);
 class App extends Component {
@@ -23,7 +24,7 @@ class App extends Component {
           <Route exact path="/" render = {() => <Featured/> } />
           {/*Passing component Item_Info, as a children is created for practice */}
           <Route path="/items-available" render = {() => <Items_Available item_info={<Item_Info/>}/> } />
-          <Route path="/test" render = {() => <Testme item_info={<Item_Info/>}/> } />
+          <Route path="/test" render = {() => <Sign_In_Box/> } />
           <Route path="/buy-item" render = {() => <Buy_Item buy_item_info={<Buy_Item_Info/>}
 
 

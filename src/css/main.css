@@ -419,6 +419,8 @@ footer .btn {
 footer .btn:hover {
   color: white;
   opacity: 0.9;
+  background-color: #222;
+  border: 1px solid #222;
 }
 @media screen and (min-width: 768px) {
   footer .btn {
@@ -711,6 +713,7 @@ div > h3 {
   border: 1px solid #222;
 }
 .add-to-bag-button:hover {
+  color: white;
   opacity: 0.9;
   background-color: #222;
   border: 1px solid #222;
@@ -730,6 +733,31 @@ div > h3 {
 
 .inactive-side-image {
   border: none;
+}
+
+#sign-in-box-title {
+  font: bold 2.6rem/1.36 helvetica, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.sign-in-labels {
+  font: 1.1rem/1.36 helvetica, arial, sans-serif;
+}
+
+.sign-in-input {
+  font: 1.6rem/1.36 helvetica, arial, sans-serif;
+}
+
+#sign-in-button {
+  font: bold 1.5rem/1.36 helvetica, arial, sans-serif;
+  background-color: #222;
+  border: 1px solid #222;
+}
+#sign-in-button:hover {
+  color: white;
+  opacity: 0.9;
+  background-color: #222;
+  border: 1px solid #222;
 }
 
 /*# sourceMappingURL=main.css.map */

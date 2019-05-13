@@ -41,9 +41,7 @@
   border:1px solid $light-black;
 
   &:hover{
-    opacity: 0.9;
-    background-color: $light-black;
-    border: 1px solid $light-black;
+    @include black-button-hover;
   }
 }
 

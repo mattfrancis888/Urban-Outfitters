@@ -12,8 +12,7 @@ footer {
     font: 700 1.5rem/1.36 $fallback_fonts;
 
     &:hover {
-      color:white;
-      opacity: 0.9;
+      @include black-button-hover;
     }
     @media screen and (min-width:$bootstrap_md_breakpoint) {
       width: 30%;

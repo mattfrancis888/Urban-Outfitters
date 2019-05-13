@@ -1,0 +1,20 @@
+#sign-in-box-title{
+  font: bold 2.6rem/1.36 $fallback_fonts;
+  text-transform: uppercase;
+}
+
+.sign-in-labels{
+  font: 1.1rem/1.36 helvetica,arial,sans-serif;
+}
+.sign-in-input{
+  font: 1.6rem/1.36 $fallback_fonts;
+}
+
+#sign-in-button{
+  font:bold 1.5rem/1.36 $fallback_fonts;
+  background-color: $light-black;
+  border:1px solid $light-black;
+  &:hover{
+    @include black-button-hover;
+  }
+}
