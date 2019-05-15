@@ -5,8 +5,9 @@ import uo_logo_smaller_screen from '../img/uo_logo_smaller_screen.gif';
 
 class Header extends React.Component{
   signInClicked = () => {
-    this.props.callbackFromParent(true);
+    this.props.showSignInCallback(true);
   }
+
   render(){
     return(
       <header>

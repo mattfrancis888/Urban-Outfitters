@@ -1,22 +1,23 @@
 .popup-out{
-  position:fixed;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(245,245,245,.7);
-  cursor:pointer;
-  z-index:1;
+  cursor: pointer;
+  z-index: 1031; //z-index that is higher than 'fixed-top' class that is created by bootstrap for the header
 }
 
 .popup-in{
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   background-color: white;
   min-height: 35rem;
   width: 100vw;
   height: 100vh;
+  cursor: default;
   @media screen and (min-width:$bootstrap_md_breakpoint) {
     top: 50%;
     left: 50%;
@@ -39,7 +40,7 @@
 }
 
 #sign-in-button{
-  font:bold 1.5rem/1.36 $fallback_fonts;
+  font: bold 1.5rem/1.36 $fallback_fonts;
   background-color: $light-black;
   border:1px solid $light-black;
   &:hover{

@@ -43,8 +43,7 @@ class Featured extends React.Component {
               <picture>
                 <source media="(min-width:768px)" srcset={first_look} />
                 <source srcset={first_look_smaller_screen} />
-                <img className="content_image h-xl-100-custom" src={first_look} alt="First look - soft,simple new styles are here."/>
-                {/* h-xl-100-custom is created because the first_look picture is not big enough to fill the whole container*/}
+                <img className="content_image" src={first_look} alt="First look - soft,simple new styles are here."/>
               </picture>
             </Link>
           </div>

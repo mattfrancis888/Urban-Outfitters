@@ -11,12 +11,6 @@
   height: 100%;
 }
 
-@media screen and (min-width: 1200px) {
-  .h-xl-100-custom {
-    height: 100%;
-  }
-}
-
 /* Document
    ========================================================================== */
 /**
@@ -743,7 +737,7 @@ div > h3 {
   left: 0;
   background-color: rgba(245, 245, 245, 0.7);
   cursor: pointer;
-  z-index: 1;
+  z-index: 1031;
 }
 
 .popup-in {
@@ -754,6 +748,7 @@ div > h3 {
   min-height: 35rem;
   width: 100vw;
   height: 100vh;
+  cursor: default;
 }
 @media screen and (min-width: 768px) {
   .popup-in {

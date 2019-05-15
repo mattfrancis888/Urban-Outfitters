@@ -19,29 +19,41 @@ import Sign_In_Box from './components/Sign_In_Box.js';
 library.add(faStar, faTimes);
 
 class App extends Component {
+
   state = {
-      hideHeaderAndFooter: false
+      showSignInBox: false,
   }
-  myCallback = (booleanFromChild) => {
-    {/*If sign in button is clicked, <Header> and <Footer> should dissapear */}
+
+  showSignInCallback=(showSignInBoolean) => {
+    {/*If sign in button is clicked, <Header> and <Footer> should dissapear, worry about this later */}
     this.setState({
-      hideHeaderAndFooter: booleanFromChild
+      showSignInBox: showSignInBoolean,
     });
-    console.log(booleanFromChild);
+  }
+
+  closeSignInCallback = (booleanFromChild) => {
+    this.setState({
+      showSignInBox: booleanFromChild
+    });
   }
 
   render() {
     return (
       <BrowserRouter>
         <div className="App">
-          <Header callbackFromParent={this.myCallback}/>
+          <Header showSignInCallback={this.showSignInCallback}
+                  showSignInBox={this.showSignInBox}/>
 
           <Route exact path="/" render = {() => <Featured/> } />
           {/*Passing component Item_Info, as a children is created for practice */}
+          {/*TODO: Change prop names to camelCase */}
           <Route path="/items-available" render = {() => <Items_Available item_info={<Item_Info/>}/> } />
-          <Route path="/test" render = {() => <Sign_In_Box/> } />
+          <Sign_In_Box closeSignInCallback={this.closeSignInCallback}
+            showSignInBox={this.state.showSignInBox}/>
+      
           <Route path="/buy-item" render = {() => <Buy_Item buy_item_info={<Buy_Item_Info/>}
             item_info={<Item_Info/>}/> } />
+
           <Footer/>
         </div>
       </BrowserRouter>
