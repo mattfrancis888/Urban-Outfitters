@@ -6,12 +6,6 @@ div > h3{
   @include overlayable-image-fills-container();
 }
 
-.filter-dropdown{
-  width: 100%;
-  border: 1px solid $light-grey;
-  font:1.4rem/1.3 $fallback_fonts;
-}
-
 .btn-secondary:hover{
   //Class created by reactstrap's elements
   border-color: $light-grey !important;

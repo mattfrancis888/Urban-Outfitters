@@ -11,6 +11,12 @@
   height: 100%;
 }
 
+.dropdown-design {
+  width: 100%;
+  border: 1px solid #aaa;
+  font: 1.4rem/1.3 helvetica, arial, sans-serif;
+}
+
 /* Document
    ========================================================================== */
 /**
@@ -369,6 +375,14 @@ body {
   }
 }
 
+#dropdown-sign-in-menu:hover, #dropdown-sign-in-menu:focus {
+  background-color: white;
+}
+
+#dropdown-sign-in-menu-item {
+  font: 1.2rem helvetica, arial, sans-serif;
+}
+
 #navbarSupportedContent {
   font: 600 1.2rem helvetica, arial, sans-serif;
 }
@@ -590,12 +604,6 @@ div > h3 {
   max-width: 100%;
 }
 
-.filter-dropdown {
-  width: 100%;
-  border: 1px solid #aaa;
-  font: 1.4rem/1.3 helvetica, arial, sans-serif;
-}
-
 .btn-secondary:hover {
   border-color: #aaa !important;
 }
@@ -731,8 +739,8 @@ div > h3 {
 
 .popup-out {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
   background-color: rgba(245, 245, 245, 0.7);

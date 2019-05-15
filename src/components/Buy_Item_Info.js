@@ -30,7 +30,7 @@ const Buy_Item_Info = () => {
       <h4 className="d-block">Qty:</h4>
 
         <UncontrolledDropdown className="w-25 mb-5">
-          <DropdownToggle caret className="filter-dropdown d-flex justify-content-between align-items-center bg-white text-dark py-3">
+          <DropdownToggle caret className="dropdown-design d-flex justify-content-between align-items-center bg-white text-dark py-3">
             1
           </DropdownToggle>
           <DropdownMenu className="w-100">

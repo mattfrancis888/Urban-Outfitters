@@ -1,5 +1,6 @@
 import React,  { Component }  from 'react';
 import {Link} from 'react-router-dom';
+import { UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap';
 import uo_logo from '../img/uo_logo.gif';
 import uo_logo_smaller_screen from '../img/uo_logo_smaller_screen.gif';
 
@@ -14,9 +15,14 @@ class Header extends React.Component{
         {/* Nav */}
         <nav className="navbar navbar-expand-lg navbar-light bg-white p-4
         border-bottom fixed-top">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <UncontrolledButtonDropdown className="d-lg-none" >
+            <DropdownToggle color="white" className=" p-3 navbar-toggler-icon border-0" id="dropdown-sign-in-menu">
+            </DropdownToggle>
+            <DropdownMenu id="dropdown-sign-in-menu-item">
+              <DropdownItem onClick={this.signInClicked}>Sign In</DropdownItem>
+            </DropdownMenu>
+          </UncontrolledButtonDropdown>
+
           <div id="nav_logo_container">
             <Link to="/">
               <picture>

@@ -21,7 +21,7 @@ class Items_Available extends React.Component {
         </div>
         <div className="row mb-5 px-4 d-flex justify-content-between d-md-none">
           <UncontrolledDropdown id="item-category-filter">
-            <DropdownToggle caret className="filter-dropdown d-flex justify-content-between align-items-center bg-white text-dark">
+            <DropdownToggle caret className="dropdown-design d-flex justify-content-between align-items-center bg-white text-dark">
               Item Categories
             </DropdownToggle>
             <DropdownMenu className="w-100">
@@ -32,7 +32,7 @@ class Items_Available extends React.Component {
           </UncontrolledDropdown>
 
           <UncontrolledDropdown className="item-attribute-filter">
-            <DropdownToggle caret className="filter-dropdown d-flex justify-content-between align-items-center bg-white text-dark">
+            <DropdownToggle caret className="dropdown-design d-flex justify-content-between align-items-center bg-white text-dark">
               Filter
             </DropdownToggle>
             <DropdownMenu className="w-100">
@@ -77,7 +77,7 @@ class Items_Available extends React.Component {
                 </div>
                 <div className="col d-flex justify-content-end">
                   <UncontrolledDropdown className="item-attribute-filter">
-                    <DropdownToggle caret className="filter-dropdown d-flex justify-content-between
+                    <DropdownToggle caret className="dropdown-design d-flex justify-content-between
                     align-items-center bg-white text-dark">
                       Filter
                     </DropdownToggle>

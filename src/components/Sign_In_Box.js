@@ -8,6 +8,15 @@ class Sign_In_Box extends React.Component {
     this.props.closeSignInCallback(false);
   }
 
+  componentDidUpdate(prev){
+    if (this.props.showSignInBox) {
+        document.body.style.overflow = "hidden";
+    } else {
+        document.body.style.overflow = "visible";
+    }
+  }
+
+
   render(){
     if(this.props.showSignInBox === false){
       return(null);
