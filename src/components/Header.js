@@ -50,8 +50,8 @@ class Header extends React.Component{
               </form>
             </div>
             {/*End of search box*/}
-            <a className="nav-link d-none d-lg-block" id="nav_sign_in_font" href="#"
-              onClick={this.signInClicked}>Sign in</a>
+            <h1 className="nav-link d-none d-lg-block" id="nav_sign_in_font"
+              onClick={this.signInClicked}>Sign in</h1>
 
             <svg className="bag_icon_img" xmlns="http://www.w3.org/2000/svg" id="Design" viewBox="0 0 16.5 18">
               <title>Bag</title>

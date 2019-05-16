@@ -23,7 +23,7 @@ class Sign_In_Box extends React.Component {
     } else{
       return(
         <>
-        <div className="popup-out">
+        <div className="popup-out" onClick={this.closeClicked} >
           <div className="popup-in">
             <form className="p-5">
               <span className="d-flex justify-content-end">

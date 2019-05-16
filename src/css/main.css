@@ -390,6 +390,7 @@ body {
 #nav_sign_in_font {
   color: rgba(0, 0, 0, 0.5);
   font: 600 1.2rem helvetica, arial, sans-serif;
+  cursor: pointer;
 }
 
 .search_icon_img {
@@ -791,6 +792,15 @@ div > h3 {
   opacity: 0.9;
   background-color: #222;
   border: 1px solid #222;
+}
+
+.testPopUp {
+  background: red;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  top: 300px;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
