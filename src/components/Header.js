@@ -53,10 +53,12 @@ class Header extends React.Component{
             <h1 className="nav-link d-none d-lg-block" id="nav_sign_in_font"
               onClick={this.signInClicked}>Sign in</h1>
 
-            <svg className="bag_icon_img" xmlns="http://www.w3.org/2000/svg" id="Design" viewBox="0 0 16.5 18">
-              <title>Bag</title>
-              <path id="Bag" className="c-cart__img-path" d="M1 15.34V7.49H15.5v7.85L13.86 17H2.64ZM6.22 2.08 7.3 1H9.14l1.09 1.09V6.5h-4ZM6.89 0 5.22 1.67V6.5H0v9.26L2.23 18h12l2.23-2.24V6.5H11.23V1.68L9.56 0Z"></path>
-            </svg>
+            <Link to="/checkout">
+              <svg className="bag_icon_img" xmlns="http://www.w3.org/2000/svg" id="Design" viewBox="0 0 16.5 18">
+                <title>Bag</title>
+                <path id="Bag" className="c-cart__img-path" d="M1 15.34V7.49H15.5v7.85L13.86 17H2.64ZM6.22 2.08 7.3 1H9.14l1.09 1.09V6.5h-4ZM6.89 0 5.22 1.67V6.5H0v9.26L2.23 18h12l2.23-2.24V6.5H11.23V1.68L9.56 0Z"></path>
+              </svg>
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent"> {/*Start of collapsable section in nav*/}
             <ul className="navbar-nav mx-auto">

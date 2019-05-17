@@ -803,4 +803,35 @@ div > h3 {
   left: 0;
 }
 
+.shopping-bag-header {
+  font: 2rem/1.36 helvetica, arial, sans-serif;
+}
+
+.cart-empty {
+  font: 1.4rem/1.36 helvetica, arial, sans-serif;
+  color: #aaa;
+}
+
+.order-summary-header {
+  font: bold 2rem/1.28 "Francois One", sans-serif;
+  text-transform: uppercase;
+}
+
+.order-summary-info {
+  font: 0.6rem/1 helvetica, arial, sans-serif;
+  color: #767676;
+}
+
+.checkout-button {
+  font: 700 1.5rem/1.36 helvetica, arial, sans-serif;
+  background-color: #222;
+  border: 1px solid #222;
+}
+.checkout-button:hover {
+  color: white;
+  opacity: 0.9;
+  background-color: #222;
+  border: 1px solid #222;
+}
+
 /*# sourceMappingURL=main.css.map */

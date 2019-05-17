@@ -1,0 +1,27 @@
+.shopping-bag-header{
+  font:2rem/1.36 $fallback-fonts;
+}
+
+.cart-empty{
+  font: 1.4rem/1.36 $fallback-fonts;
+  color: $light-grey;
+}
+
+.order-summary-header{
+  font:bold 2rem/1.28 "Francois One",sans-serif;
+  text-transform: uppercase;
+}
+
+.order-summary-info{
+  font:0.6rem/1 $fallback-fonts;
+  color:$dark-grey;
+}
+
+.checkout-button{
+  font: 700 1.5rem/1.36 $fallback-fonts;
+  background-color: $light-black;
+  border: 1px solid $light-black;
+  &:hover{
+    @include black-button-hover;
+  }
+}
