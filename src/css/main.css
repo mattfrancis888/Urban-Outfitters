@@ -834,4 +834,11 @@ div > h3 {
   border: 1px solid #222;
 }
 
+@media screen and (min-width: 768px) {
+  .order-summary-container {
+    position: sticky;
+    top: 10rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

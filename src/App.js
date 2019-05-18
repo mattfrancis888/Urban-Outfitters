@@ -15,7 +15,7 @@ import Items_Available from './components/Items_Available.js';
 import Buy_Item from './components/Buy_Item.js';
 import Buy_Item_Info from './components/Buy_Item_Info.js';
 import Sign_In_Box from './components/Sign_In_Box.js';
-import Checkout from './components/Checkout.js';
+import Total_Transaction from './components/Total_Transaction.js';
 
 library.add(faStar, faTimes);
 
@@ -26,7 +26,6 @@ class App extends Component {
   }
 
   showSignInCallback=(showSignInBoolean) => {
-    {/*If sign in button is clicked, <Header> and <Footer> should dissapear, worry about this later */}
     this.setState({
       showSignInBox: showSignInBoolean,
     });
@@ -54,7 +53,7 @@ class App extends Component {
           <Route path="/buy-item" render = {() => <Buy_Item buy_item_info={<Buy_Item_Info/>}
             item_info={<Item_Info/>}/> } />
 
-          <Route path="/checkout" render = {() => <Checkout/>}/>
+          <Route path="/total-transaction" render = {() => <Total_Transaction/>}/>
 
           <Footer/>
         </div>

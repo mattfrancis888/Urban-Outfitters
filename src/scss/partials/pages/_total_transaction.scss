@@ -25,3 +25,10 @@
     @include black-button-hover;
   }
 }
+
+.order-summary-container{
+  @media screen and (min-width:$bootstrap_md_breakpoint) {
+    position: sticky;
+    top:10rem;
+  }
+}
