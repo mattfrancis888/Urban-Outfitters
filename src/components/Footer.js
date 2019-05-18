@@ -15,9 +15,9 @@ const Footer = (props) => {
         <div className="container-fluid">
           <div className="row footer_content">
             <div className="col-12 col-md-6">
-              <div id="email_header_content">
-                <h1 id="email_sign_up_title">Get Our Emails</h1>
-                <h5 id="email_sign_up_detail">Sign up to receive Urban Outfitters emails and
+              <div className="email_header_content">
+                <h1 className="email_sign_up_title">Get Our Emails</h1>
+                <h5 className="email_sign_up_detail">Sign up to receive Urban Outfitters emails and
                   get first dibs on new arrivals, sales, exclusive content and more!</h5>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Footer = (props) => {
               <button type="button" className="btn">SUBMIT</button>
             </div>
             <div className="col-12">
-              <p id="email_sign_up_agreement">
+              <p className="email_sign_up_agreement">
                 By entering your email address, you agree to receive Urban Outfitters offers, promotions, other commercial messages. You can view our Privacy Policy here and you may unsubscribe at any time.
               </p>
             </div>
@@ -56,7 +56,7 @@ const Footer = (props) => {
             {/* Start of social media container */}
             <div className="col-12 col-lg-3 footer_content">
               <h3 className="footer_section_header">Follow us</h3>
-              <ul id="social_media_icon_contianer">
+              <ul className="social_media_icon_contianer">
                 <li>
                   <img className="social_icon" src={ig_icon} alt="Instagram" />
                 </li>

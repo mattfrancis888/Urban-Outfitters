@@ -5,7 +5,7 @@
   border: none;
 }
 
-#nav_logo_container {
+.nav_logo_container {
   width: 70%;
   text-align: center;
   @media screen and (min-width:$bootstrap_lg_breakpoint) {
@@ -13,7 +13,7 @@
   }
 }
 
-#nav_logo {
+.nav_logo {
   width: 3.6rem;
   @media screen and (min-width:$bootstrap_md_breakpoint) {
     width: 25rem;
@@ -25,33 +25,33 @@
   }
 }
 
-#dropdown-sign-in-menu{
+.dropdown-sign-in-menu{
   &:hover, &:focus{
     background-color: white;
   }
 }
 
-#dropdown-sign-in-menu-item{
+.dropdown-sign-in-menu-item{
   font: 1.2rem $fallback-fonts;
 }
-#navbarSupportedContent {
+.navbarSupportedContent {
   font: 600 1.2rem $fallback_fonts;
 }
 
-#nav_sign_in_font {
+.nav-sign-in-font {
   color: rgba(0,0,0,.5);
   font: 600 1.2rem $fallback_fonts;
   cursor: pointer;
 }
 
-.search_icon_img {
+.search-icon-img {
   width: 20px;
   height: 18px;
   fill: #222;
 }
 
-.bag_icon_img {
-  width: 16.5px;
+.bag-icon-img {
+  width: 1.6rem;
   height: 1.8rem;
 }
 

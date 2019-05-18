@@ -31,7 +31,7 @@ class Sign_In_Box extends React.Component {
                  className="fa-lg" style={ {color: "#767676", cursor:"pointer"} }
                  onClick={this.closeClicked}/>
               </span>
-              <h1 className="text-center" id="sign-in-box-title"> Sign in </h1>
+              <h1 className="text-center sign-in-box-title"> Sign in </h1>
 
               <div className="form-group mb-4 w-100">
                 <label for="exampleInputEmail1" className="sign-in-labels">Email address</label>
@@ -42,7 +42,7 @@ class Sign_In_Box extends React.Component {
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" className="form-control sign-in-input p-4" id="exampleInputPassword1" placeholder="Password"/>
               </div>
-              <button type="button" className="btn btn-primary btn-lg w-100 p-3" id="sign-in-button">Sign in</button>
+              <button type="button" className="btn btn-primary btn-lg w-100 p-3 sign-in-button">Sign in</button>
             </form>
           </div>
         </div>

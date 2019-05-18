@@ -24,7 +24,7 @@ div > h3{
   letter-spacing: .04rem;
 }
 
-#item-category-filter{
+.item-category-filter{
   width: 70%;
 }
 
@@ -35,7 +35,7 @@ div > h3{
   }
 }
 
-#result-count{
+.result-count{
   font: 1.1rem/1.36 $fallback_fonts;
   color: $dark-grey;
 }
@@ -65,13 +65,13 @@ div > h3{
   }
 }
 
-#browse-by-header{
+.browse-by-header{
   font:1.1rem/1.36 helvetica,arial,sans-serif;
   letter-spacing: .04rem;
   color: $dark-grey;
   border-bottom:1px solid #aaa;
 }
 
-#all-new-header{
+.all-new-header{
   font: 700 1.1rem/1.36 helvetica,arial,sans-serif
 }

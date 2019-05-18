@@ -27,7 +27,7 @@
   }
 }
 
-#sign-in-box-title{
+.sign-in-box-title{
   font: bold 2.6rem/1.36 $fallback_fonts;
   text-transform: uppercase;
 }
@@ -39,20 +39,11 @@
   font: 1.6rem/1.36 $fallback_fonts;
 }
 
-#sign-in-button{
+.sign-in-button{
   font: bold 1.5rem/1.36 $fallback_fonts;
   background-color: $light-black;
   border:1px solid $light-black;
   &:hover{
     @include black-button-hover;
   }
-}
-
-.testPopUp{
-  background:red;
-  width: 300px;
-  height:500px;
-  position:fixed;
-  top:300px;
-  left:0;
 }

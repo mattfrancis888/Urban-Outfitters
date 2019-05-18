@@ -20,7 +20,7 @@ class Items_Available extends React.Component {
           <h3 className="font-weight-bold my-3 align-with-UO-logo d-md-none">Items</h3>
         </div>
         <div className="row mb-5 px-4 d-flex justify-content-between d-md-none">
-          <UncontrolledDropdown id="item-category-filter">
+          <UncontrolledDropdown className="item-category-filter">
             <DropdownToggle caret className="dropdown-design d-flex justify-content-between align-items-center bg-white text-dark">
               Item Categories
             </DropdownToggle>
@@ -43,14 +43,14 @@ class Items_Available extends React.Component {
           </UncontrolledDropdown>
         </div>
 
-        <h4 className="align-with-UO-logo mb-3 d-md-none" id="result-count"> 5 results </h4>
+        <h4 className="align-with-UO-logo mb-3 d-md-none result-count"> 5 results </h4>
 
         <div className="row">
 
           {/*Beginning Sidebar */}
           <div className="d-none d-md-block col-md-3 col-xl-2">
-            <h3 id="browse-by-header" className="pb-3"> Browse by </h3>
-            <h3 id="all-new-header" className="py-3"> All New </h3>
+            <h3 className="browse-by-header" className="pb-3"> Browse by </h3>
+            <h3 className="all-new-header" className="py-3"> All New </h3>
 
             <ul class="list-group">
               <li class="list-group-item border-0 py-3 px-0">Graphic Tees</li>
@@ -73,7 +73,7 @@ class Items_Available extends React.Component {
               */}
                 <div className="col">
                   <h3 className="font-weight-bold my-3 d-inline-block mr-3">Items</h3>
-                  <h4 className="d-inline-block" id="result-count"> 5 results </h4>
+                  <h4 className="d-inline-block result-count"> 5 results </h4>
                 </div>
                 <div className="col d-flex justify-content-end">
                   <UncontrolledDropdown className="item-attribute-filter">

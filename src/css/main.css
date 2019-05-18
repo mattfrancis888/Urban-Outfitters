@@ -350,57 +350,57 @@ body {
   border: none;
 }
 
-#nav_logo_container {
+.nav_logo_container {
   width: 70%;
   text-align: center;
 }
 @media screen and (min-width: 992px) {
-  #nav_logo_container {
+  .nav_logo_container {
     width: auto;
   }
 }
 
-#nav_logo {
+.nav_logo {
   width: 3.6rem;
 }
 @media screen and (min-width: 768px) {
-  #nav_logo {
+  .nav_logo {
     width: 25rem;
   }
 }
 @media screen and (min-width: 992px) {
-  #nav_logo {
+  .nav_logo {
     width: 15rem;
     height: 1.5rem;
   }
 }
 
-#dropdown-sign-in-menu:hover, #dropdown-sign-in-menu:focus {
+.dropdown-sign-in-menu:hover, .dropdown-sign-in-menu:focus {
   background-color: white;
 }
 
-#dropdown-sign-in-menu-item {
+.dropdown-sign-in-menu-item {
   font: 1.2rem helvetica, arial, sans-serif;
 }
 
-#navbarSupportedContent {
+.navbarSupportedContent {
   font: 600 1.2rem helvetica, arial, sans-serif;
 }
 
-#nav_sign_in_font {
+.nav-sign-in-font {
   color: rgba(0, 0, 0, 0.5);
   font: 600 1.2rem helvetica, arial, sans-serif;
   cursor: pointer;
 }
 
-.search_icon_img {
+.search-icon-img {
   width: 20px;
   height: 18px;
   fill: #222;
 }
 
-.bag_icon_img {
-  width: 16.5px;
+.bag-icon-img {
+  width: 1.6rem;
   height: 1.8rem;
 }
 
@@ -452,31 +452,31 @@ footer .form-control {
   }
 }
 
-#email_header_content {
+.email_header_content {
   margin-bottom: 3rem;
 }
 
-#email_sign_up_title {
+.email_sign_up_title {
   text-align: center;
   font: lighter 1.8rem/1.15 helvetica, arial, sans-serif;
 }
 @media screen and (min-width: 768px) {
-  #email_sign_up_title {
+  .email_sign_up_title {
     text-align: left;
   }
 }
 
-#email_sign_up_detail {
+.email_sign_up_detail {
   font: 1.1rem/1.36 helvetica, arial, sans-serif;
 }
 
-#email_sign_up_agreement {
+.email_sign_up_agreement {
   font: 0.9rem/1.36 helvetica, arial, sans-serif;
   text-align: center;
   margin: 5rem 0;
 }
 @media screen and (min-width: 768px) {
-  #email_sign_up_agreement {
+  .email_sign_up_agreement {
     margin: 1rem 0;
     font-size: 1rem;
   }
@@ -508,7 +508,7 @@ footer .form-control {
   }
 }
 
-#social_media_icon_contianer {
+.social_media_icon_contianer {
   width: 18rem;
   display: flex;
   flex-flow: row wrap;
@@ -518,21 +518,21 @@ footer .form-control {
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  #social_media_icon_contianer {
+  .social_media_icon_contianer {
     width: 35%;
     margin: 0;
   }
 }
 @media screen and (min-width: 992px) {
-  #social_media_icon_contianer {
+  .social_media_icon_contianer {
     width: 100%;
   }
 }
-#social_media_icon_contianer li {
+.social_media_icon_contianer li {
   margin: 0.8rem;
 }
 @media screen and (min-width: 992px) {
-  #social_media_icon_contianer li {
+  .social_media_icon_contianer li {
     margin: 0;
   }
 }
@@ -622,7 +622,7 @@ div > h3 {
   letter-spacing: 0.04rem;
 }
 
-#item-category-filter {
+.item-category-filter {
   width: 70%;
 }
 
@@ -635,7 +635,7 @@ div > h3 {
   }
 }
 
-#result-count {
+.result-count {
   font: 1.1rem/1.36 helvetica, arial, sans-serif;
   color: #767676;
 }
@@ -663,14 +663,14 @@ div > h3 {
   }
 }
 
-#browse-by-header {
+.browse-by-header {
   font: 1.1rem/1.36 helvetica, arial, sans-serif;
   letter-spacing: 0.04rem;
   color: #767676;
   border-bottom: 1px solid #aaa;
 }
 
-#all-new-header {
+.all-new-header {
   font: 700 1.1rem/1.36 helvetica, arial, sans-serif;
 }
 
@@ -687,7 +687,7 @@ div > h3 {
   }
 }
 
-#carousel-form-for-xs-item-pic {
+.carousel-form-for-xs-item-pic {
   position: absolute;
   top: 1rem;
   right: 2rem;
@@ -769,7 +769,7 @@ div > h3 {
   }
 }
 
-#sign-in-box-title {
+.sign-in-box-title {
   font: bold 2.6rem/1.36 helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
@@ -782,25 +782,16 @@ div > h3 {
   font: 1.6rem/1.36 helvetica, arial, sans-serif;
 }
 
-#sign-in-button {
+.sign-in-button {
   font: bold 1.5rem/1.36 helvetica, arial, sans-serif;
   background-color: #222;
   border: 1px solid #222;
 }
-#sign-in-button:hover {
+.sign-in-button:hover {
   color: white;
   opacity: 0.9;
   background-color: #222;
   border: 1px solid #222;
-}
-
-.testPopUp {
-  background: red;
-  width: 300px;
-  height: 500px;
-  position: fixed;
-  top: 300px;
-  left: 0;
 }
 
 .shopping-bag-header {

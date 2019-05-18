@@ -34,11 +34,11 @@ footer {
   }
 }
 
-#email_header_content {
+.email_header_content {
   margin-bottom: 3rem;
 }
 
-#email_sign_up_title {
+.email_sign_up_title {
   text-align: center;
   font: lighter 1.8rem/1.15 $fallback_fonts;
   @media screen and (min-width:$bootstrap_md_breakpoint) {
@@ -46,11 +46,11 @@ footer {
   }
 }
 
-#email_sign_up_detail {
+.email_sign_up_detail {
   font: 1.1rem/1.36 $fallback_fonts;
 }
 
-#email_sign_up_agreement {
+.email_sign_up_agreement {
   font: 0.9rem/1.36 $fallback_fonts;
   text-align: center;
   margin: 5rem 0;
@@ -82,7 +82,7 @@ footer {
   }
 }
 
-#social_media_icon_contianer {
+.social_media_icon_contianer {
   width: 18rem;
   display: flex;
   flex-flow: row wrap;

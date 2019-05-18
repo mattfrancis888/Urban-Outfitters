@@ -72,7 +72,7 @@ class Buy_Item extends React.Component {
               <div className="position-relative col-12 col-lg-10">
                 <img className="item-image mb-3 w-100" src= {this.state.currentImg} />
                 {/*Radio buttons for pictures in xs screen */}
-                <div className="d-block d-sm-none mt-3" id="carousel-form-for-xs-item-pic">
+                <div className="d-block d-sm-none mt-3 carousel-form-for-xs-item-pic">
                   <span className={`carousel-button mx-1 ${this.state.radioStatus === 0 ? "active-radio" : "inactive-radio"}`}
                      ref={this.buttonRef}
                     onClick={() => this.handleRadioClick(0)}
