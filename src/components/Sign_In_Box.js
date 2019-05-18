@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Sign_In_Box extends React.Component {
 
-  closeClicked = () => {
-    this.props.closeSignInCallback(false);
+ closeClicked(e, showSignInBox) {
+    this.props.closeSignInCallback(showSignInBox);
+    e.stopPropagation(); {/* stops calling on parent's onClick; so onClick wont trigger twice for popup-in class */}
   }
 
   componentDidUpdate(prev){
@@ -23,13 +24,13 @@ class Sign_In_Box extends React.Component {
     } else{
       return(
         <>
-        <div className="popup-out" onClick={this.closeClicked} >
-          <div className="popup-in">
+        <div className="popup-out" onClick={e => this.closeClicked(e, false)} >
+          <div className="popup-in" onClick={e => this.closeClicked(e, true)}>
             <form className="p-5">
               <span className="d-flex justify-content-end">
                 <FontAwesomeIcon icon="times"
                  className="fa-lg" style={ {color: "#767676", cursor:"pointer"} }
-                 onClick={this.closeClicked}/>
+                 onClick={e => this.closeClicked(e, false)}/>
               </span>
               <h1 className="text-center sign-in-box-title"> Sign in </h1>
 

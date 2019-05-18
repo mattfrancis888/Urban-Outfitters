@@ -31,9 +31,9 @@ class App extends Component {
     });
   }
 
-  closeSignInCallback = (booleanFromChild) => {
+  closeSignInCallback = (closeSignInBoolean) => {
     this.setState({
-      showSignInBox: booleanFromChild
+      showSignInBox: closeSignInBoolean
     });
   }
 
