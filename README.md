@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Urban-Outfitters
+React and Bootstrap 4 (Reactstrap) to create a simmilar website to Urban Outfitters. Focused in responsiveness and design.
 
-## Available Scripts
+## Why I picked React + Bootstrap (Reactstrap) And What I've Learned
 
-In the project directory, you can run:
+Pros of the stack:
+- React offers VDOM manipulation, making it faster in re-building the layout after a DOM changes.
+- React offers components for re-usability and organizaiton of features/layouts. 
+- Bootstrap offers quick layouts and features to manipulate and utilize.
 
-### `npm start`
+Cons of the Stack:
+- The need to use Bootstrap grids for layout is solved by flex and CSS grids.
+- Features used from Reactstrap like the dropdown in the header requires jQuery and Popper.js to function. It directly manipulates the DOM, defeating the purpose of the VDOM.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+What I've learned:
+- React, Bootstrap.
+- Not to overuse Refs. It directly manipulates the DOM, defeating the purpose of the VDOM. Focus on setState and class manipulation.A usefull case of using it would be to get a value from a form.
+- Responsiveness for all screens.
+- Proper JPG, PNG, SVG, Gif usages.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Cons of the whole project - Things to improve on:
+- No minificaiton/uglification/optimizaiton. 
+- No linters and type checkers used.
+- No types of testing.
+- PostCSS is not used to detect/use pre-fixes.
+- Know more about SVG.
+ 
 
-### `npm test`
+## What It Looks Like
+<img src="readme-img/large_screen_home.jpg"/>
+<img src="readme-img/small_screen_home.png"/>
+<img src="readme-img/large_screen_buy_item.png"/>
+<img src="readme-img/medium_screen_buy_item.png"/>
+<img src="readme-img/small_screen_buy_item.png"/>
+<img src="readme-img/large_screen_sign_in.png"/>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the project. Use `npm install` to install all the dependencies.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+What things you need to install the software
 
-### `npm run eject`
+```
+- Any package manager (npm, yarn)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Versioning
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+None
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
